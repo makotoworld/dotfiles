@@ -1,4 +1,3 @@
-
 # users generic .zshrc file for zsh(1)
 
 ## Environment variable configuration
@@ -181,16 +180,10 @@ esac
 #
 [ -f ~/.zshrc.mine ] && source ~/.zshrc.mine
 
-export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
-export MANPATH=/opt/local/man:$MANPATH
-
-eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
-
-alias ssh-makoto='ssh -i ~/.ssh/nopass-dsa makotoworld@makotoworld.com'
-alias ssh-ns1.makoto='ssh -i ~/.ssh/nopass-dsa makotoworld@192.168.1.101'
-alias mysql='mysql5'
-export PYTHONPATH='~/Library/PythonLib/'
 export EDITOR='vi'
-source ~/perl5/perlbrew/etc/bashrc
-export PATH=${PATH}:/Applications/android/tools/
+
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+export VERSIONER_PYTHON_PREFER_64_BIT=no
+export VERSIONER_PYTHON_PREFER_32_BIT=yes
+source ~/python/bin/activate
 
